@@ -3,6 +3,60 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_01a41d5b66aaa1828be93e885380b03da2985b4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_10207d130ae13f0220ee994e41adf2a7962a8857.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_aebc9c95442baf01f77629b57332b81f2562acb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\alarm-clock\alarmmanagerclock\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67c3c028bc6dc5f915407c0764b045755150e65f">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\alarm-clock-alarmmanagerclock-unspecified_2caefb656dc6d96849af0154767e1b4b9bc7ca2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\l\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_710f1682ba80b30997f199dff4e333de657ac451.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\com.bigkoo\pickerview\2.0.8\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f3f00bb9cdb0a14b0db183427d227bfd78b29ec2">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\com.bigkoo-pickerview-2.0.8_8af71536257b5b2b947c2dbba9c57f3f79602ed5.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -27,15 +81,6 @@
         revision="23.0.3"
         sha1="67c3c028bc6dc5f915407c0764b045755150e65f">
         <dex dex="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\pre-dexed\debug\Android-AlarmManagerClock-alarmmanagerclock-unspecified_dae23fa9be8861b1abe3b0977875ce62b9eeb8e9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_10207d130ae13f0220ee994e41adf2a7962a8857.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,12 +111,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\l\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\MK\Desktop\android\Android-AlarmManagerClock\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_710f1682ba80b30997f199dff4e333de657ac451.jar" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_165d7033a94b8e8d142a10c61a2065559b510be1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_c3cd9b27343530bb031444e92b36d399cdaacf22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\MK\Desktop\android\alarm-clock\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_c700f3044471e8ec861435b8b7a9a64caa3981b9.jar" />
     </item>
 
 </items>

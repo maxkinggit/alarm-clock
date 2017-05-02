@@ -90,13 +90,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setClock() {
         if (time != null && time.length() > 0) {
             String[] times = time.split(":");
+            /*
             if (cycle == 0) {//是每天的闹钟
                 AlarmManagerUtil.setAlarm(this, 0, Integer.parseInt(times[0]), Integer.parseInt
                         (times[1]), 0, 0, "闹钟响了", ring);
-            } if(cycle == -1){//是只响一次的闹钟
+            }
+            */
+            if(cycle == -1){//是只响一次的闹钟
                 AlarmManagerUtil.setAlarm(this, 1, Integer.parseInt(times[0]), Integer.parseInt
                         (times[1]), 0, 0, "闹钟响了", ring);
-            }else {//多选，周几的闹钟
+            }
+            /*
+            else {//多选，周几的闹钟
                 String weeksStr = parseRepeat(cycle, 1);
                 String[] weeks = weeksStr.split(",");
                 for (int i = 0; i < weeks.length; i++) {
@@ -104,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             .parseInt(times[1]), i, Integer.parseInt(weeks[i]), "闹钟响了", ring);
                 }
             }
+            */
             Toast.makeText(this, "闹钟设置成功", Toast.LENGTH_LONG).show();
         }
 
@@ -119,6 +125,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void obtainMessage(int flag, String ret) {
                 switch (flag) {
+                    /*
                     // 星期一
                     case 0:
 
@@ -148,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         break;
                     // 确定
+
                     case 7:
                         int repeat = Integer.valueOf(ret);
                         tv_repeat_value.setText(parseRepeat(repeat, 0));
@@ -159,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         cycle = 0;
                         fp.dismiss();
                         break;
+                        */
                     case 9:
                         tv_repeat_value.setText("只响一次");
                         cycle = -1;
@@ -203,6 +212,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @param flag   flag=0返回带有汉字的周一，周二cycle等，flag=1,返回weeks(1,2,3)
      * @return
      */
+    /*
     public static String parseRepeat(int repeat, int flag) {
         String cycle = "";
         String weeks = "";
@@ -270,5 +280,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return flag == 0 ? cycle : weeks;
     }
-
+*/
 }

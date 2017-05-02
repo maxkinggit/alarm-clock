@@ -56,7 +56,9 @@ public class SelectRemindCyclePopup implements OnClickListener {
                 null);
 
         tv_drugcycle_once = (TextView) view.findViewById(R.id.tv_drugcycle_once);
+/*
         every_day = (TextView) view.findViewById(R.id.tv_drugcycle_0);
+        */
         tv_mon = (TextView) view.findViewById(R.id.tv_drugcycle_1);
         tv_tue = (TextView) view.findViewById(R.id.tv_drugcycle_2);
         tv_wed = (TextView) view.findViewById(R.id.tv_drugcycle_3);
