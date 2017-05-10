@@ -41,7 +41,6 @@ public class AlarmManagerUtil {
      * @param tips            闹钟提示信息
      * @param soundOrVibrator 2表示声音和震动都执行，1表示只有铃声提醒，0表示只有震动提醒
      */
-
     public static void setAlarm(Context context, int flag, int hour, int minute, int id, int
             week, String tips, int soundOrVibrator) {
         AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);

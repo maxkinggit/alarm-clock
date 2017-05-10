@@ -7,10 +7,19 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class ClockAlarmActivity extends Activity {
+
+public class    ClockAlarmActivity extends Activity {
     private MediaPlayer mediaPlayer;
     private Vibrator vibrator;
+    public static int delay_minute=2;
+    private String time;
+    static TimeListener mTimeListener;
+    public static void setTimeListener(TimeListener timeListener) {
+        mTimeListener = timeListener;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +60,38 @@ public class ClockAlarmActivity extends Activity {
                     }
                     dialog.dismiss();
                     finish();
+                }else if(dialog.bt_delay==v){
+                    if (flag == 1 || flag == 2) {
+                        mediaPlayer.stop();
+                        mediaPlayer.release();
+                    }
+                    if (flag == 0 || flag == 2) {
+                        vibrator.cancel();
+                    }
+                    time = getTime(afterMinute());
+                    if (time != null && time.length() > 0){
+                        if(mTimeListener!=null){
+                            mTimeListener.setTime(time);
+                        }
+                    }
+                    dialog.dismiss();
+                    finish();
                 }
             }
         });
 
 
+    }
+
+    private Date afterMinute(){
+        return new Date(System.currentTimeMillis()+delay_minute*60*1000);
+    }
+    public static String getTime(Date date) {
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+        return format.format(date);
+    }
+    public interface TimeListener{
+        void setTime(String time);
     }
 
 }

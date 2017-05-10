@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.loonggg.alarmmanager.clock.R;
 
 public class SelectRemindCyclePopup implements OnClickListener {
-    private TextView  every_day, tv_drugcycle_once;
+    private TextView  tv_sure,every_day, tv_drugcycle_once;
     public PopupWindow mPopupWindow;
     private SelectRemindCyclePopupOnClickListener selectRemindCyclePopupListener;
 
@@ -57,7 +57,9 @@ public class SelectRemindCyclePopup implements OnClickListener {
         tv_drugcycle_once = (TextView) view.findViewById(R.id.tv_drugcycle_once);
         every_day = (TextView) view.findViewById(R.id.tv_drugcycle_0);
 
+        tv_sure = (TextView) view.findViewById(R.id.tv_drugcycle_sure);
         tv_drugcycle_once.setOnClickListener(this);
+        tv_sure.setOnClickListener(this);
         every_day.setOnClickListener(this);
 
         return view;

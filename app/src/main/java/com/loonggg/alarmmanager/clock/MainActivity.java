@@ -13,12 +13,13 @@ import com.bigkoo.pickerview.TimePickerView;
 import com.loonggg.alarmmanager.clock.view.SelectRemindCyclePopup;
 import com.loonggg.alarmmanager.clock.view.SelectRemindWayPopup;
 import com.loonggg.lib.alarmmanager.clock.AlarmManagerUtil;
+import com.loonggg.lib.alarmmanager.clock.ClockAlarmActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView date_tv;
+    private  TextView date_tv;
     private TimePickerView pvTime;
     private RelativeLayout repeat_rl, ring_rl;
     private TextView tv_repeat_value, tv_ring_value;
@@ -62,6 +63,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 pvTime.show();
             }
         });
+        ClockAlarmActivity.setTimeListener(new ClockAlarmActivity.TimeListener() {
+            @Override
+            public void setTime(String time) {
+                date_tv.setText(time);
+                String[] times = time.split(":");
+                AlarmManagerUtil.setAlarm(getApplicationContext(), 1, Integer.parseInt(times[0]), Integer.parseInt
+                        (times[1]), 0, 0, "闹钟响了", ring);
+            }
+        });
 
     }
 
@@ -90,17 +100,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setClock() {
         if (time != null && time.length() > 0) {
             String[] times = time.split(":");
-            Toast.makeText(this, "闹钟设置成功了", Toast.LENGTH_LONG).show();
-
             if (cycle == 0) {//是每天的闹钟
                 AlarmManagerUtil.setAlarm(this, 0, Integer.parseInt(times[0]), Integer.parseInt
                         (times[1]), 0, 0, "闹钟响了", ring);
-            }
-
-            if(cycle == -1){//是只响一次的闹钟
+            } if(cycle == -1){//是只响一次的闹钟
                 AlarmManagerUtil.setAlarm(this, 1, Integer.parseInt(times[0]), Integer.parseInt
                         (times[1]), 0, 0, "闹钟响了", ring);
             }
+
+            Toast.makeText(this, "闹钟设置成功", Toast.LENGTH_LONG).show();
         }
 
     }
@@ -115,13 +123,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void obtainMessage(int flag, String ret) {
                 switch (flag) {
-
                     case 8:
                         tv_repeat_value.setText("每天");
                         cycle = 0;
                         fp.dismiss();
                         break;
-
                     case 9:
                         tv_repeat_value.setText("只响一次");
                         cycle = -1;
@@ -160,4 +166,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
+
 }

@@ -55,10 +55,9 @@ public class SelectRemindWayPopup implements OnClickListener {
         View view = LayoutInflater.from(mContext).inflate(R.layout.selectremindway_pop_window,
                 null);
 
-        //remaind_way1 = (TextView) view.findViewById(R.id.tv_drugway_1);
-
+        remaind_way1 = (TextView) view.findViewById(R.id.tv_drugway_1);
         remaind_way2 = (TextView) view.findViewById(R.id.tv_drugway_2);
-        //remaind_way1.setOnClickListener(this);
+        remaind_way1.setOnClickListener(this);
         remaind_way2.setOnClickListener(this);
         return view;
     }
@@ -66,10 +65,10 @@ public class SelectRemindWayPopup implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            /*
+
             case R.id.tv_drugway_1:
                 selectRemindWayPopupListener.obtainMessage(0);
-                break;*/
+                break;
             case R.id.tv_drugway_2:
                 selectRemindWayPopupListener.obtainMessage(1);
                 break;

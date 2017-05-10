@@ -27,6 +27,7 @@
             android:textSize="20sp"/>
 
         <TextView style="@style/horizontal_line_style"/>
+
         <TextView
             android:id="@+id/tv_drugcycle_0"
             android:layout_width="match_parent"
@@ -37,7 +38,21 @@
             android:text="每天"
             android:textColor="@color/black_33"
             android:textSize="20sp"/>
+
         <TextView style="@style/horizontal_line_style"/>
+
+        <TextView
+            android:id="@+id/tv_drugcycle_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@null"
+            android:gravity="center"
+            android:text="@string/cycle_sure"
+            android:textColor="@color/black_33"
+            android:textSize="20sp"/>
+
         <TextView
             style="@style/horizontal_line_style"
             android:layout_marginBottom="20dp"/>
